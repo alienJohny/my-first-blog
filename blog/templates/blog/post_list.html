@@ -8,7 +8,13 @@
                     Опубликовано: {{ post.published_date }}
                 </p>
             </div>
-            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+
+            <div class="post_title">
+                <h1>
+                    <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+                </h1>
+            </div>
+            
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}

@@ -1,5 +1,8 @@
 .page-header {
-    background-color: #ff9400;
+    background: #673AB7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #512DA8, #673AB7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #512DA8, #673AB7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -8,14 +11,15 @@
     color: #ffffff;
     font-size: 36pt;
     text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.post_title {
+    font-family: 'Roboto', sans-serif;
 }
 
 .content {
     margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
 }
 
 .date {
